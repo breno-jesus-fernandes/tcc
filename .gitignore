@@ -134,3 +134,4 @@ dmypy.json
 *.fls
 *.idx
 *.ilg
+*.gz
