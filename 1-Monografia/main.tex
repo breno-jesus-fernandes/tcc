@@ -1,39 +1,44 @@
-\documentclass[
-	% -- opções da classe memoir --
-	12pt,				% tamanho da fonte
-	oneside,			% para impressão em verso e anverso. Oposto a oneside
-	a4paper,			% tamanho do papel.
-	% -- opções do pacote babel --
-	english,			% idioma adicional para hifenização
-	brazil				% o último idioma é o principal do documento
-	]{abntex2}
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[portuguese]{babel}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{scrextend}
+\usepackage{lipsum}
+\geometry{
+  a4paper,
+  left=3cm,
+  right=2cm,
+  top=3cm,
+  bottom=2cm
+}
 
-% ---
-% Pacotes básicos 
-% ---
-\usepackage{uarial}				% Usa a fonte Latin Modern			lmodern
-\usepackage[T1]{fontenc}		% Selecao de codigos de fonte.
-\usepackage[utf8]{inputenc}		% Codificacao do documento (conversão automática dos acentos)
-\usepackage{lastpage}			% Usado pela Ficha catalográfica
-\usepackage{indentfirst}		% Indenta o primeiro parágrafo de cada seção.
-\usepackage{color}				% Controle das cores
-\usepackage{graphicx}			% Inclusão de gráficos
-\usepackage{microtype} 			% para melhorias de justificação
+\begin{document}
 
-% pacotes adicionados
-\usepackage{amsmath}
-\usepackage{amssymb,amsfonts,amsthm}
-\usepackage{setspace}
-% ---
-		
-% ---
-% Pacotes adicionais, usados apenas no âmbito do Modelo Canônico do abnteX2
-% ---
-\usepackage{lipsum}				% para geração de dummy text
-% ---
-\usepackage{todonotes}
-% ---
-% Pacotes de citações
-% ---
-\usepackage[brazilian,hyperpageref]{backref}	 % Paginas com as citações na bibl
-\usepackage[alf]{abntex2cite}	% Citações padrão ABNT
+% Incluindo a capa
+\input{pre-textuais/capa}
+
+% Incluindo a folha de rosto
+\input{pre-textuais/folha-de-rosto}
+
+% Incluindo resumo
+\input{pre-textuais/resumo}
+
+% Incluindo introducao
+\input{textuais/introducao}
+
+% Incluindo referencial teorico
+\input{textuais/referencial-teorico}
+
+% Incluindo metodologia de pesquisa
+\input{textuais/metologia-pesquisa}
+
+% Incluindo cronograma
+\input{textuais/cronograma}
+
+% Incluindo cronograma
+\input{pos-textuais/referencias.tex}
+
+
+\end{document}
