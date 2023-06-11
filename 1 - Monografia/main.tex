@@ -8,87 +8,30 @@
 \usepackage[normalem]{ulem}
 
 %\usepackage[brazil]{babel}   
-\usepackage[utf8]{inputenc}  
+\usepackage[utf8]{inputenc}
 \usepackage{booktabs, multirow}
 
-\sloppy
-
-\title{Uma revisao sobre predicao de series temporais financeiras com machine learning}
-
-\author{Breno de Jesus Fernandes \inst{1}, Dr. Anderson Adaime de Borba\inst{1,2}}
-
-\address{
-  Ciência da Computação\\
-  Faculdade de Computação e Informática\\
-  Universidade Presbiteriana Mackenzie\\
-  São Paulo -- SP -- Brasil
-  \email{\{41890590\}@mackenzista.com.br,
-  anderson.borba@mackenzie.br}
-}
+% Incluindo a capa
+\input{pre-textuais/capa}
 
 \begin{document} 
 
-\maketitle
+% Incluindo o resumo
+\input{pre-textuais/resumo}
 
-\begin{resumo} 
-  \textcolor{gray}{Copiar uma parte do grupo: Este meta-projeto apresenta a estrutura e estilos utilizados para a elaboração do projeto de pesquisa a ser entregue na disciplina de Metodologia da Pesquisa em Computação ministrada na Faculdade de Computação e Informática (FCI) da Universidade Presbiteriana Mackenzie (UPM). O(s) autor(es) deve(m) dispor em até 10 linhas, na versão final do projeto de TCC, o resumo com o tema, objetivo da pesquisa, abordagem teórico-metodológica e resultados esperados.}
-\end{resumo}
+% Incluindo a capa
+\input{textuais/introducao}
 
-\section{Introdução}
+% Incluindo o referencial teorico
+\input{textuais/referencial-teorico}
 
-\textcolor{gray}{Trazer algo pra interessar o leitor. A introdução estabelece uma \colorbox{lightgray}{contextualização fundamentada do tema}, assim como apresenta o problema de pesquisa (questão a ser respondida pelo TCC) \textcolor{black}{[entregue no Projeto Parcial]}, o objetivo geral (meta a ser alcançada, sendo sua apresentação feita com verbo no infinitivo) \textcolor{black}{[entregue no Projeto Parcial]} e os objetivos específicos (etapas de trabalho para atingir o objetivo geral \textcolor{black}{[entregue no Projeto Parcial]}, também apresentados com verbos no infinitivo dado que traduzem ações). Além disso, trata da \colorbox{lightgray}{justificativa} (elementos e referências bibliográficas que mostram a relevância da investigação, assim como contribuições decorrentes do trabalho proposto).}
+% Incluindo materias e metodos
+\input{textuais/materias-metodos}
 
-\textcolor{gray}{Finalmente, ainda são dispostas a hipótese (afirmação provisória a ser confirmada/refutada durante o TCC) [entregue no Projeto Parcial] e a \colorbox{lightgray}{organização do documento} (descrição das partes constitutivas).}
+% Incluindo o cronograma
+\input{textuais/cronograma}
 
-\section{Referencial Teórico}
-\textcolor{gray}{\colorbox{lightgray}{Elaboração de referencial teórico enfocando conceitos, técnicas, métodos, algoritmos e }
-\colorbox{lightgray}{demais elementos pertinentes à pesquisa que será realizada.} O mesmo deve ser suportado por, pelo menos, 8-10 referências bibliográficas relacionadas (conforme o padrão da SBC - cuja URL de acesso se encontra na última seção deste documento, denominada de Referências Bibliográficas).}
-
-\subsection{Tópico 1}
-\textcolor{gray}{As subdivisões da seção 2 possibilitam a melhor organização da apresentação dos elementos que integram o referencial teórico do TCC.}
-
-\subsection{Subtópico 1}
-
-\textcolor{gray}{As subdivisões da subseção 2.1 possibilitam a melhor organização da apresentação dos elementos que integram o referencial teórico do TCC.}
-
-\section{Materiais e Métodos}
-\textcolor{gray}{\colorbox{lightgray}{Apresentação das etapas e dos materiais (hardwares/softwares etc.) que serão utilizados} 
-\colorbox{lightgray}{ao longo da pesquisa, assim como as justificativas pertinentes (embasadas por referências} 
-\colorbox{lightgray}{bibliográficas)}. Inclusive, também é necessário \colorbox{lightgray}{classificar a pesquisa} conforme a \colorbox{lightgray}{natureza} (básica ou aplicada), \colorbox{lightgray}{abordagem} (quantitativa, qualitativa, mista ou quali-quanti), \colorbox{lightgray}{finalidade} (exploratória, descritiva, explicativa, metodológica) e \colorbox{lightgray}{meio} (bibliográfica, documental, estudo de caso, experimental, pesquisa de campo etc.).}
-
-\textcolor{gray}{Cabe destacar que as imagens presentes no documento devem possuir, conforme exemplo da Figura 1, a resolução de 600dpi.} 
-
-\begin{figure}[h]
-\centering
-
-\caption{Marca da FCI-UPM}
-\end{figure}
-
-\textcolor{gray}{Já a listagem das referências completas que serão estudadas ao longo da pesquisa deve ser apresentada no final do documento (sendo as informações apresentadas no arquivo ``\texttt{estilo/sbc-template.bib}''. Ao longo do texto, as referências fazem uso do comando  \textbackslash\texttt{cite\{chamada-da-referência\}}, resultando, por exemplo, em \cite{boulic:91}, \cite{smith:99} e \cite{knuth:84}.}
-
-\section{Cronograma}
-\textcolor{gray}{Disposição das etapas que serão realizadas [entregue no Projeto Parcial], bem como a duração de cada uma em meses.} 
-
-\begin{table}[!htp]\centering
-\caption{Cronograma para o Desenvolvimento do TCC}\label{tab: }
-\scriptsize
-\begin{tabular}{lr|r|r|r|r|r|r|r|r|r|r|rr}\toprule
-\multirow{2}{*}{\textbf{ATIVIDADE}} &\multicolumn{12}{c}{\textbf{MÊS}} \\\midrule
-&1 &2 &3 &4 &5 &6 &7 &8 &9 &10 &11 &12 \\
-Atividade 1 & & & X & & & & & & & \\
-Atividade 2 & & & & & & & & & & & \\
-Atividade 3 & & & & & & & & & & & \\
-Atividade 4 & & & & & & & & & & & \\
-Atividade 5 & & & & & & & & & & & \\
-Atividade 6 & & & & & & & & & & & \\
-Atividade 7 & & & & & & & & & & & \\
-Atividade 8 & & & & & & & & & & & \\
-\bottomrule
-\end{tabular}
-\end{table}
-
-\bibliographystyle{estilo/sbc}
-\def\refname{Referências Bibliográficas}
-\bibliography{estilo/sbc-template}
+% Incluindo o cronograma
+\input{pos-textuais/referencias}
 
 \end{document}
